@@ -35,5 +35,5 @@ Actions) and, where available, an archived version with a DOI.
 ---
 
 *Analysis and code are developed with the assistance of AI tools
-(Google Gemini, OpenAI ChatGPT (GPT-5.6 Luna), Anthropic Claude); every stated result is checked by the code
+(Google Gemini, OpenAI ChatGPT, Anthropic Claude); every stated result is checked by the code
 in the corresponding repository.*
