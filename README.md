@@ -18,8 +18,8 @@ Actions) and, where available, an archived version with a DOI.
 | Paper | Preprint | Code | Checks |
 |---|---|---|---|
 | *Sharp criterion for the coarse-grained arrow of time in Hamiltonian dynamics* | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23135743.svg)](https://doi.org/10.5281/zenodo.23135743) | [coarse-grained-arrow-of-time](https://github.com/neginyan/coarse-grained-arrow-of-time) | 24 |
-| *Causal consistency of Diósi–Penrose reduction and a profile-independent mass scale M_P/√2* | [doi:10.5281/zenodo.23064513](https://doi.org/10.5281/zenodo.23064513) | [causal-consistency-dp-reduction](https://github.com/neginyan/causal-consistency-dp-reduction) | 55 |
-| *The spacetime carrier substrate: bandlimited information, regular geometry, and a gravitational Heisenberg cut* | [doi:10.5281/zenodo.22976896](https://doi.org/10.5281/zenodo.22976896) | [spacetime-carrier-substrate](https://github.com/neginyan/spacetime-carrier-substrate) | 117 |
+| *Causal consistency of Diósi–Penrose reduction and a profile-independent mass scale M_P/√2* | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23064513.svg)](https://doi.org/10.5281/zenodo.23064513) | [causal-consistency-dp-reduction](https://github.com/neginyan/causal-consistency-dp-reduction) | 55 |
+| *The spacetime carrier substrate: bandlimited information, regular geometry, and a gravitational Heisenberg cut* | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23064513.svg)](https://doi.org/10.5281/zenodo.23064513) | [spacetime-carrier-substrate](https://github.com/neginyan/spacetime-carrier-substrate) | 117 |
 
 #### In one line each
 
