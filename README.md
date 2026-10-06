@@ -24,6 +24,7 @@ Actions) and, where available, an archived version with a DOI.
 
 #### In one line each
 
+- **Stretching-rate threshold.** In phase-space diffusion models with an isotropic marginal noise schedule, one rate κ decides whether the standard reverse SDE exists, whether likelihood training is well posed, and whether the coarse-grained arrow of time holds — the arrow-of-time criterion applied to machine learning.
 - **Arrow of time.** Gaussian coarse-graining of a Hamiltonian ensemble gives a
   non-decreasing entropy for every initial state if and only if the resolution
   widens at least as fast as the flow stretches phase space (exact for linear
