@@ -9,7 +9,7 @@ machine learning.
 
 **How I work.** Every analytical result in my papers is checked by code that
 anyone can run. Each repository below has automated verification (GitHub
-Actions) and, where available, an archived version with a DOI.
+Actions) and an archived version with a DOI.
 
 ---
 
@@ -17,14 +17,20 @@ Actions) and, where available, an archived version with a DOI.
 
 | Paper | Preprint | Code | Checks |
 |---|---|---|---|
-| *A stretching-rate threshold for phase-space diffusion models with isotropic marginal noise schedules* | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23181225.svg)](https://doi.org/10.5281/zenodo.23181225) | [phase-space-diffusion-threshold](https://github.com/neginyan/phase-space-diffusion-threshold) | 113 |
-| *Sharp criterion for the coarse-grained arrow of time in Hamiltonian dynamics* | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23163727.svg)](https://doi.org/10.5281/zenodo.23163727) | [coarse-grained-arrow-of-time](https://github.com/neginyan/coarse-grained-arrow-of-time) | 33 |
-| *Causal consistency of Diósi–Penrose reduction and a profile-independent mass scale M_P/√2* | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23064513.svg)](https://doi.org/10.5281/zenodo.23064513) | [causal-consistency-dp-reduction](https://github.com/neginyan/causal-consistency-dp-reduction) | 55 |
-| *The spacetime carrier substrate: bandlimited information, regular geometry, and a gravitational Heisenberg cut* | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22976896.svg)](https://doi.org/10.5281/zenodo.22976896) | [spacetime-carrier-substrate](https://github.com/neginyan/spacetime-carrier-substrate) | 117 |
+| *A resolution gap for the coarse-grained arrow of time in nonlinear Hamiltonian flows* | [doi:10.5281/zenodo.23252860](https://doi.org/10.5281/zenodo.23252860) | [resolution-gap-arrow-of-time](https://github.com/neginyan/resolution-gap-arrow-of-time) | 281 |
+| *A stretching-rate threshold for phase-space diffusion models with isotropic marginal noise schedules* | [doi:10.5281/zenodo.23181225](https://doi.org/10.5281/zenodo.23181225) | [phase-space-diffusion-threshold](https://github.com/neginyan/phase-space-diffusion-threshold) | 113 |
+| *Sharp criterion for the coarse-grained arrow of time in Hamiltonian dynamics* | [doi:10.5281/zenodo.23258135](https://doi.org/10.5281/zenodo.23258135) | [coarse-grained-arrow-of-time](https://github.com/neginyan/coarse-grained-arrow-of-time) | 33 |
+| *Causal consistency of Diósi–Penrose reduction and a profile-independent mass scale M_P/√2* | [doi:10.5281/zenodo.23064513](https://doi.org/10.5281/zenodo.23064513) | [causal-consistency-dp-reduction](https://github.com/neginyan/causal-consistency-dp-reduction) | 55 |
+| *The spacetime carrier substrate: bandlimited information, regular geometry, and a gravitational Heisenberg cut* | [doi:10.5281/zenodo.22976896](https://doi.org/10.5281/zenodo.22976896) | [spacetime-carrier-substrate](https://github.com/neginyan/spacetime-carrier-substrate) | 117 |
 
 #### In one line each
 
-- **Stretching-rate threshold.** In phase-space diffusion models with an isotropic marginal noise schedule, one rate κ decides whether the standard reverse SDE exists, whether likelihood training is well posed, and whether the coarse-grained arrow of time holds — the arrow-of-time criterion applied to machine learning.
+- **Resolution gap.** For nonlinear flows the arrow-of-time criterion is proved
+  for every Gaussian state; at finite resolution σ the threshold is missed by a
+  margin proportional to σ (exact for the pendulum, observed for mixtures).
+- **Diffusion models.** One stretching-rate threshold decides whether a
+  phase-space diffusion model with an isotropic noise schedule has a reverse
+  SDE, a well-posed likelihood objective, and an arrow of time.
 - **Arrow of time.** Gaussian coarse-graining of a Hamiltonian ensemble gives a
   non-decreasing entropy for every initial state if and only if the resolution
   widens at least as fast as the flow stretches phase space (exact for linear
@@ -37,5 +43,5 @@ Actions) and, where available, an archived version with a DOI.
 ---
 
 *Analysis and code are developed with the assistance of AI tools
-(Google Gemini, OpenAI ChatGPT, Anthropic Claude); every stated result is checked by the code
-in the corresponding repository.*
+(Google Gemini, OpenAI ChatGPT, Anthropic Claude); every stated result is
+checked by the code in the corresponding repository.*
