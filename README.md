@@ -23,6 +23,15 @@ Actions) and an archived version with a DOI.
 | *Causal consistency of Diósi–Penrose reduction and a profile-independent mass scale M_P/√2* | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23064513.svg)](https://doi.org/10.5281/zenodo.23064513) | [causal-consistency-dp-reduction](https://github.com/neginyan/causal-consistency-dp-reduction) | 55 |
 | *The spacetime carrier substrate: bandlimited information, regular geometry, and a gravitational Heisenberg cut* | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22976896.svg)](https://doi.org/10.5281/zenodo.22976896) | [spacetime-carrier-substrate](https://github.com/neginyan/spacetime-carrier-substrate) | 117 |
 
+#### Try it in your browser
+
+Two short notebooks reproduce a central result each in about a minute on a CPU (Google Colab, no installation):
+
+- **The arrow of time through a blurry lens.** Pendulums on their unstable top: with the blur fixed the coarse-grained entropy falls; blurring slightly slower than the stretching rate is still enough, because a finite resolution leaves a margin.
+  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/neginyan/resolution-gap-arrow-of-time/blob/main/demo/arrow_of_time_demo.ipynb)
+- **Sampling below the threshold.** A phase-space diffusion model sampled with the exact score: below the threshold the clipped reverse SDE shrinks every mode, the corrected sampler does not.
+  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/neginyan/phase-space-diffusion-threshold/blob/main/demo/sampler_below_threshold.ipynb)
+
 #### In one line each
 
 - **Resolution gap.** For nonlinear flows the arrow-of-time criterion is proved
