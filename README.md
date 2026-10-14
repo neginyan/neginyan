@@ -26,12 +26,14 @@ Actions) and an archived version with a DOI.
 
 #### Try it in your browser
 
-Two short notebooks reproduce a central result each in about a minute on a CPU (Google Colab, no installation):
+Three short notebooks reproduce a central result each in a minute or two on a CPU (Google Colab, no installation):
 
 - **The arrow of time through a blurry lens.** Pendulums on their unstable top: with the blur fixed the coarse-grained entropy falls; blurring slightly slower than the stretching rate is still enough, because a finite resolution leaves a margin.
   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/neginyan/resolution-gap-arrow-of-time/blob/main/demo/arrow_of_time_demo.ipynb)
 - **Sampling below the threshold.** A phase-space diffusion model sampled with the exact score: below the threshold the clipped reverse SDE shrinks every mode, the corrected sampler does not.
   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/neginyan/phase-space-diffusion-threshold/blob/main/demo/sampler_below_threshold.ipynb)
+- **Many degrees of freedom, checked blind.** A search over all Gaussian states of two coupled pendulums, from random starts, lands on the matrix formula; widening along a momentum costs nothing; the sealed predictions are downloaded, hash-checked and recomputed.
+  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/neginyan/resolution-gap-many-dof/blob/main/demo/resolution_gap_many_dof.ipynb)
 
 #### In one line each
 
