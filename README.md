@@ -17,6 +17,7 @@ Actions) and an archived version with a DOI.
 
 | Paper | Preprint | Code | Checks |
 |---|---|---|---|
+| *The resolution gap in many degrees of freedom* | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23371932.svg)](https://doi.org/10.5281/zenodo.23371932) | [resolution-gap-many-dof](https://github.com/neginyan/resolution-gap-many-dof) | 543 |
 | *A resolution gap for the coarse-grained arrow of time in nonlinear Hamiltonian flows* | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23320603.svg)](https://doi.org/10.5281/zenodo.23320603) | [resolution-gap-arrow-of-time](https://github.com/neginyan/resolution-gap-arrow-of-time) | 336 |
 | *A stretching-rate threshold for phase-space diffusion models with isotropic marginal noise schedules* | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23181225.svg)](https://doi.org/10.5281/zenodo.23181225) | [phase-space-diffusion-threshold](https://github.com/neginyan/phase-space-diffusion-threshold) | 113 |
 | *Sharp criterion for the coarse-grained arrow of time in Hamiltonian dynamics* | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23258135.svg)](https://doi.org/10.5281/zenodo.23258135) | [coarse-grained-arrow-of-time](https://github.com/neginyan/coarse-grained-arrow-of-time) | 33 |
@@ -34,6 +35,10 @@ Two short notebooks reproduce a central result each in about a minute on a CPU (
 
 #### In one line each
 
+- **Many degrees of freedom.** One matrix formula gives the resolution gap of
+  the best Gaussian state in any number of degrees of freedom: momentum
+  directions and uncoupled modes cost nothing, and six predictions sealed
+  before computing were confirmed.
 - **Resolution gap.** For nonlinear flows the arrow-of-time criterion is proved
   for every Gaussian state; at finite resolution σ the threshold is missed by a
   margin proportional to σ (exact for the pendulum, observed for mixtures).
