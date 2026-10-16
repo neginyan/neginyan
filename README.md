@@ -17,6 +17,7 @@ Actions) and an archived version with a DOI.
 
 | Paper | Preprint | Code | Checks |
 |---|---|---|---|
+| *Can a learned score see the margin of the arrow of time?* | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23408213.svg)](https://doi.org/10.5281/zenodo.23408213) | [learned-score-arrow-of-time](https://github.com/neginyan/learned-score-arrow-of-time) | 68 |
 | *The resolution gap in many degrees of freedom* | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23371932.svg)](https://doi.org/10.5281/zenodo.23371932) | [resolution-gap-many-dof](https://github.com/neginyan/resolution-gap-many-dof) | 543 |
 | *A resolution gap for the coarse-grained arrow of time in nonlinear Hamiltonian flows* | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23320603.svg)](https://doi.org/10.5281/zenodo.23320603) | [resolution-gap-arrow-of-time](https://github.com/neginyan/resolution-gap-arrow-of-time) | 336 |
 | *A stretching-rate threshold for phase-space diffusion models with isotropic marginal noise schedules* | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23181225.svg)](https://doi.org/10.5281/zenodo.23181225) | [phase-space-diffusion-threshold](https://github.com/neginyan/phase-space-diffusion-threshold) | 113 |
@@ -37,6 +38,10 @@ Three short notebooks reproduce a central result each in a minute or two on a CP
 
 #### In one line each
 
+- **Learned scores.** Small networks trained by denoising score matching read
+  the arrow-of-time margin to within 2 % in two and four dimensions; a
+  stochastic equation with the physical drift needs noise at least as fast as
+  the stretching, while the entropy keeps growing in a band below it.
 - **Many degrees of freedom.** One matrix formula gives the resolution gap of
   the best Gaussian state in any number of degrees of freedom: momentum
   directions and uncoupled modes cost nothing, and six predictions sealed
