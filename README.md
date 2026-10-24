@@ -17,6 +17,7 @@ Actions) and an archived version with a DOI.
 
 | Paper | Preprint | Code | Checks |
 |---|---|---|---|
+| *Is the resolution gap of the arrow of time uniform?* | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23617343.svg)](https://doi.org/10.5281/zenodo.23617343) | [resolution-gap-log-law](https://github.com/neginyan/resolution-gap-log-law) | 65 + 12 |
 | *Can a learned score see the margin of the arrow of time?* | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23408213.svg)](https://doi.org/10.5281/zenodo.23408213) | [learned-score-arrow-of-time](https://github.com/neginyan/learned-score-arrow-of-time) | 68 |
 | *The resolution gap in many degrees of freedom* | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23371932.svg)](https://doi.org/10.5281/zenodo.23371932) | [resolution-gap-many-dof](https://github.com/neginyan/resolution-gap-many-dof) | 543 |
 | *A resolution gap for the coarse-grained arrow of time in nonlinear Hamiltonian flows* | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23320603.svg)](https://doi.org/10.5281/zenodo.23320603) | [resolution-gap-arrow-of-time](https://github.com/neginyan/resolution-gap-arrow-of-time) | 336 |
@@ -27,8 +28,10 @@ Actions) and an archived version with a DOI.
 
 #### Try it in your browser
 
-Three short notebooks reproduce a central result each in a minute or two on a CPU (Google Colab, no installation):
+Four short notebooks reproduce a central result each in a minute or two on a CPU (Google Colab, no installation):
 
+- **How small can the gap get?** Ripple states recomputed down to σ = 10⁻⁹⁶ with an independent evaluator: their smallest gap shrinks like 1/√ln(1/σ), and stays above the proved lower bounds.
+  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/neginyan/resolution-gap-log-law/blob/main/demo/resolution_gap_log_law.ipynb)
 - **The arrow of time through a blurry lens.** Pendulums on their unstable top: with the blur fixed the coarse-grained entropy falls; blurring slightly slower than the stretching rate is still enough, because a finite resolution leaves a margin.
   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/neginyan/resolution-gap-arrow-of-time/blob/main/demo/arrow_of_time_demo.ipynb)
 - **Sampling below the threshold.** A phase-space diffusion model sampled with the exact score: below the threshold the clipped reverse SDE shrinks every mode, the corrected sampler does not.
@@ -38,6 +41,10 @@ Three short notebooks reproduce a central result each in a minute or two on a CP
 
 #### In one line each
 
+- **Log law.** The resolution gap is not uniform: ripple states shrink it to
+  zero as σ → 0 (numerical), but only like 1/√ln(1/σ), and it cannot shrink
+  faster (proved under one ratio condition, and without it for product states
+  and for states without deep valleys; conjectured for all states).
 - **Learned scores.** Small networks trained by denoising score matching read
   the arrow-of-time margin to within 2 % in two and four dimensions; a
   stochastic equation with the physical drift needs noise at least as fast as
