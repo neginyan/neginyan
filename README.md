@@ -17,6 +17,7 @@ Actions) and an archived version with a DOI.
 
 | Paper | Preprint | Code | Checks |
 |---|---|---|---|
+| *When the blur is slower than the flow: clipped and corrected samplers on the critically damped Langevin flow* | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23689913.svg)](https://doi.org/10.5281/zenodo.23689913) | [cld-corrected-sampler](https://github.com/neginyan/cld-corrected-sampler) | 286 |
 | *Is the resolution gap of the arrow of time uniform?* | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23617343.svg)](https://doi.org/10.5281/zenodo.23617343) | [resolution-gap-log-law](https://github.com/neginyan/resolution-gap-log-law) | 65 + 12 |
 | *Can a learned score see the margin of the arrow of time?* | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23408213.svg)](https://doi.org/10.5281/zenodo.23408213) | [learned-score-arrow-of-time](https://github.com/neginyan/learned-score-arrow-of-time) | 68 |
 | *The resolution gap in many degrees of freedom* | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23371932.svg)](https://doi.org/10.5281/zenodo.23371932) | [resolution-gap-many-dof](https://github.com/neginyan/resolution-gap-many-dof) | 543 |
@@ -28,8 +29,10 @@ Actions) and an archived version with a DOI.
 
 #### Try it in your browser
 
-Four short notebooks reproduce a central result each in a minute or two on a CPU (Google Colab, no installation):
+Five short notebooks reproduce a central result each in a few minutes on a CPU (Google Colab, no installation):
 
+- **One line fixes the sampler.** The critically damped Langevin flow with an isotropic noise schedule: below the threshold the clipped sampler pulls every mode towards its centre, as the theory predicts, while the corrected sampler, one line different, lands on the target.
+  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/neginyan/cld-corrected-sampler/blob/main/demo/cld_corrected_sampler_demo.ipynb)
 - **How small can the gap get?** Ripple states recomputed down to σ = 10⁻⁹⁶ with an independent evaluator: their smallest gap shrinks like 1/√ln(1/σ), and stays above the proved lower bounds.
   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/neginyan/resolution-gap-log-law/blob/main/demo/resolution_gap_log_law.ipynb)
 - **The arrow of time through a blurry lens.** Pendulums on their unstable top: with the blur fixed the coarse-grained entropy falls; blurring slightly slower than the stretching rate is still enough, because a finite resolution leaves a margin.
@@ -41,6 +44,12 @@ Four short notebooks reproduce a central result each in a minute or two on a CPU
 
 #### In one line each
 
+- **CLD samplers.** On the critically damped Langevin flow with an isotropic
+  noise schedule, the clipped reverse SDE is biased below the threshold and a
+  corrected sampler, one line different, is exact (proved); the damage is
+  mapped by exact error equations: a few per cent in typical settings, above
+  10 % only when the final blur is comparable to the data scale or the mass is
+  far from its default (numerical).
 - **Log law.** The resolution gap is not uniform: ripple states shrink it to
   zero as σ → 0 (numerical), but only like 1/√ln(1/σ), and it cannot shrink
   faster (proved under one ratio condition, and without it for product states
