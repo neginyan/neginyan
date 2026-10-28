@@ -17,6 +17,7 @@ Actions) and an archived version with a DOI.
 
 | Paper | Preprint | Code | Checks |
 |---|---|---|---|
+| *How fine can a hidden ripple be? A two-sided logarithmic law for the resolution gap of the arrow of time* | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23746972.svg)](https://doi.org/10.5281/zenodo.23746972) | [resolution-gap-two-sided](https://github.com/neginyan/resolution-gap-two-sided) | 22 |
 | *When the blur is slower than the flow: clipped and corrected samplers on the critically damped Langevin flow* | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23689913.svg)](https://doi.org/10.5281/zenodo.23689913) | [cld-corrected-sampler](https://github.com/neginyan/cld-corrected-sampler) | 286 |
 | *Is the resolution gap of the arrow of time uniform?* | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23617343.svg)](https://doi.org/10.5281/zenodo.23617343) | [resolution-gap-log-law](https://github.com/neginyan/resolution-gap-log-law) | 65 + 12 |
 | *Can a learned score see the margin of the arrow of time?* | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23408213.svg)](https://doi.org/10.5281/zenodo.23408213) | [learned-score-arrow-of-time](https://github.com/neginyan/learned-score-arrow-of-time) | 68 |
@@ -29,8 +30,10 @@ Actions) and an archived version with a DOI.
 
 #### Try it in your browser
 
-Five short notebooks reproduce a central result each in a few minutes on a CPU (Google Colab, no installation):
+Six short notebooks reproduce a central result each in a few minutes on a CPU (Google Colab, no installation):
 
+- **How fine can a hidden ripple be?** The proved band for the resolution gap closes towards 1 from both sides as the blur shrinks, with the certified cells and the computed strips and combs inside it; a comb is a strip seen through a lens 256 times sharper.
+  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/neginyan/resolution-gap-two-sided/blob/main/demo/hidden_ripple_demo.ipynb)
 - **One line fixes the sampler.** The critically damped Langevin flow with an isotropic noise schedule: below the threshold the clipped sampler pulls every mode towards its centre, as the theory predicts, while the corrected sampler, one line different, lands on the target.
   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/neginyan/cld-corrected-sampler/blob/main/demo/cld_corrected_sampler_demo.ipynb)
 - **How small can the gap get?** Ripple states recomputed down to σ = 10⁻⁹⁶ with an independent evaluator: their smallest gap shrinks like 1/√ln(1/σ), and stays above the proved lower bounds.
@@ -44,6 +47,11 @@ Five short notebooks reproduce a central result each in a few minutes on a CPU (
 
 #### In one line each
 
+- **Two-sided log law.** On periodic windows (from strips to combs) the
+  smallest resolution gap times √ln(1/σ) lies between 1 − 1.7 lnln/ln and
+  1 + 6.0 lnln/ln for 10⁻¹⁰⁰⁰⁰⁰ ≤ σ ≤ 10⁻²⁴ (computer-assisted proof, under
+  explicit assumptions), so it tends to 1 (proved from below, derived from
+  above); for general states one inequality remains conjectured.
 - **CLD samplers.** On the critically damped Langevin flow with an isotropic
   noise schedule, the clipped reverse SDE is biased below the threshold and a
   corrected sampler, one line different, is exact (proved); the damage is
