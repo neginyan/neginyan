@@ -17,7 +17,8 @@ Actions) and an archived version with a DOI.
 
 | Paper | Preprint | Code | Checks |
 |---|---|---|---|
-| *How fine can a hidden ripple be? A two-sided logarithmic law for the resolution gap of the arrow of time* | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23746972.svg)](https://doi.org/10.5281/zenodo.23746972) | [resolution-gap-two-sided](https://github.com/neginyan/resolution-gap-two-sided) | 22 |
+| *Learned scores on the critically damped Langevin flow: a corrected sampler in 281 steps, and a metric-dependent fragility of the probability flow* | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23899157.svg)](https://doi.org/10.5281/zenodo.23899157) | [cld-learned-score-samplers](https://github.com/neginyan/cld-learned-score-samplers) | 24 |
+| *How fine can a hidden ripple be? A two-sided logarithmic law for the resolution gap of the arrow of time* | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23746971.svg)](https://doi.org/10.5281/zenodo.23746971) | [resolution-gap-two-sided](https://github.com/neginyan/resolution-gap-two-sided) | 77 |
 | *When the blur is slower than the flow: clipped and corrected samplers on the critically damped Langevin flow* | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23689913.svg)](https://doi.org/10.5281/zenodo.23689913) | [cld-corrected-sampler](https://github.com/neginyan/cld-corrected-sampler) | 286 |
 | *Is the resolution gap of the arrow of time uniform?* | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23617343.svg)](https://doi.org/10.5281/zenodo.23617343) | [resolution-gap-log-law](https://github.com/neginyan/resolution-gap-log-law) | 65 + 12 |
 | *Can a learned score see the margin of the arrow of time?* | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23408213.svg)](https://doi.org/10.5281/zenodo.23408213) | [learned-score-arrow-of-time](https://github.com/neginyan/learned-score-arrow-of-time) | 68 |
@@ -47,11 +48,18 @@ Six short notebooks reproduce a central result each in a few minutes on a CPU (G
 
 #### In one line each
 
+- **Learned scores on the CLD flow.** With a learned score, a Heun-type
+  corrected sampler is accurate in 281 steps in every metric tested; the
+  learned probability-flow ODE breaks far more often when the metric lies
+  above the threshold (10 of 12 networks against 3 of 16); thirteen of
+  nineteen pre-registered predictions failed, and all are reported
+  (numerical).
 - **Two-sided log law.** On periodic windows (from strips to combs) the
   smallest resolution gap times √ln(1/σ) lies between 1 − 1.7 lnln/ln and
   1 + 6.0 lnln/ln for 10⁻¹⁰⁰⁰⁰⁰ ≤ σ ≤ 10⁻²⁴ (computer-assisted proof, under
-  explicit assumptions), so it tends to 1 (proved from below, derived from
-  above); for general states one inequality remains conjectured.
+  explicit assumptions); as σ → 0 it ends between 1 − ε̄ and 1 on every class
+  whose remainder is bounded by ε̄, and tends to 1 along an explicit comb
+  (proved); for general states one inequality remains conjectured.
 - **CLD samplers.** On the critically damped Langevin flow with an isotropic
   noise schedule, the clipped reverse SDE is biased below the threshold and a
   corrected sampler, one line different, is exact (proved); the damage is
