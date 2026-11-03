@@ -31,8 +31,10 @@ Actions) and an archived version with a DOI.
 
 #### Try it in your browser
 
-Six short notebooks reproduce a central result each in a few minutes on a CPU (Google Colab, no installation):
+Seven short notebooks reproduce a central result each in a few minutes on a CPU (Google Colab, no installation):
 
+- **A corrected sampler in 281 steps.** One stored score network, one Brownian path: the Heun-type corrected sampler lands on the target at 281 steps, while Euler–Maruyama spreads every mode even at the same cost; and the handful of tail trajectories that break the probability-flow ODE, re-run with the learned and the exact score.
+  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/neginyan/cld-learned-score-samplers/blob/main/demo/cld_learned_score_demo.ipynb)
 - **How fine can a hidden ripple be?** The proved band for the resolution gap closes towards 1 from both sides as the blur shrinks, with the certified cells and the computed strips and combs inside it; a comb is a strip seen through a lens 256 times sharper.
   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/neginyan/resolution-gap-two-sided/blob/main/demo/hidden_ripple_demo.ipynb)
 - **One line fixes the sampler.** The critically damped Langevin flow with an isotropic noise schedule: below the threshold the clipped sampler pulls every mode towards its centre, as the theory predicts, while the corrected sampler, one line different, lands on the target.
