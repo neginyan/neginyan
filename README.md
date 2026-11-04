@@ -17,6 +17,7 @@ Actions) and an archived version with a DOI.
 
 | Paper | Preprint | Code | Checks |
 |---|---|---|---|
+| *Beyond few harmonics: the lower side of the logarithmic law of the resolution gap for windows with a weak ripple* | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23932698.svg)](https://doi.org/10.5281/zenodo.23932698) | [resolution-gap-weak-ripple](https://github.com/neginyan/resolution-gap-weak-ripple) | 20 |
 | *Learned scores on the critically damped Langevin flow: a corrected sampler in 281 steps, and a metric-dependent fragility of the probability flow* | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23899157.svg)](https://doi.org/10.5281/zenodo.23899157) | [cld-learned-score-samplers](https://github.com/neginyan/cld-learned-score-samplers) | 24 |
 | *How fine can a hidden ripple be? A two-sided logarithmic law for the resolution gap of the arrow of time* | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23746971.svg)](https://doi.org/10.5281/zenodo.23746971) | [resolution-gap-two-sided](https://github.com/neginyan/resolution-gap-two-sided) | 77 |
 | *When the blur is slower than the flow: clipped and corrected samplers on the critically damped Langevin flow* | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23689913.svg)](https://doi.org/10.5281/zenodo.23689913) | [cld-corrected-sampler](https://github.com/neginyan/cld-corrected-sampler) | 286 |
@@ -50,6 +51,13 @@ Seven short notebooks reproduce a central result each in a few minutes on a CPU 
 
 #### In one line each
 
+- **Beyond few harmonics.** The lower side of the log law extends to
+  periodic windows with any number of harmonics whose ripple is weak or poor
+  in low-frequency energy, for every state whose focus spans at least about
+  0.7 ripple periods and for 10⁻⁴¹⁷ ≲ σ ≤ 10⁻²⁴ (computer-assisted proof,
+  with an explicit bound on floating-point rounding in every cell); one of
+  our own conjectures is refuted, and what remains open is listed from the
+  nearest to the farthest.
 - **Learned scores on the CLD flow.** With a learned score, a Heun-type
   corrected sampler is accurate in 281 steps in every metric tested; the
   learned probability-flow ODE breaks far more often when the metric lies
